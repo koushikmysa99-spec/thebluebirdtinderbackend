@@ -6,7 +6,11 @@ const jwt = require('jsonwebtoken');
 const router = express.Router();
 
 // Connect to MongoDB (adjust MONGO_URI as needed)
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/bluebird';
+
+
+const  MONGO_URI = "mongodb+srv://bluebirdadmin:bluebirdadmin@bluebirdtinderdatabase.3fp6q1j.mongodb.net/?retryWrites=true&w=majority&appName=bluebirdtinderdatabase"
+
+
 if (!mongoose.connection.readyState) {
     mongoose.connect(MONGO_URI, {
         useNewUrlParser: true,
